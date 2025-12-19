@@ -1,6 +1,8 @@
-# Klivio-Taiwind
-Projet 1 Tailwind :
-https://celiakdj.github.io/Klivio-Taiwind/
+# Projet-Klivio 
+Projet 1 : html-css et tailwind
 
-# site-statique : projet Klivio Célia KADJO
-https://celiakdj.github.io/site-statique/
+# Projet HTML-CSS :
+ https://celiakdj.github.io/Projet-Klivio/html-css/
+
+ # Projet Tailwind :
+  https://celiakdj.github.io/Projet-Klivio/tailwind/
