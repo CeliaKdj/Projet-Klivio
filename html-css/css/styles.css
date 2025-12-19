@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* RESET */
 * {
@@ -77,7 +77,7 @@ body {
   padding: 0.6rem 3rem 0.6rem 1rem;
 }
 #nav-milieu input::placeholder {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 100%;
@@ -244,7 +244,7 @@ body {
   flex-direction: column;
 }
 #contenu h3 {
-  width: 100%;
+  /* width: 100%; */
   height: 72px;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
@@ -253,7 +253,9 @@ body {
   line-height: 72px;
   margin-top: 20px;
   color: #152237;
-  /* padding-left: 130px; */
+  margin-left: 130px;
+
+  /* margin-left: 110px; */
 }
 .mobile-break {
   display: none;
@@ -261,7 +263,7 @@ body {
 
 #container-formation-populaires {
   width: auto;
-  min-height: 632px;
+  height: 632px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -315,7 +317,7 @@ body {
   margin: 5px;
 }
 
-#plus-dinfo-formations {
+#contenu button {
   width: 225px;
   height: 40px;
   background: #152237;
@@ -329,7 +331,7 @@ body {
   border-radius: 6px;
   color: #ffffff;
   align-self: center;
-  margin-bottom: 25px;
+  /* margin-bottom: 20px; */
 }
 
 .prix-card-1 {
@@ -369,7 +371,6 @@ body {
 /* FORMATIONS RECENTES */
 #contenu-2 {
   width: 100%;
-  min-height: 632px;
   display: flex;
   flex-direction: column;
   background: #152237;
@@ -378,6 +379,7 @@ body {
 #contenu-2 h3 {
   width: auto;
   height: 72px;
+  text-align: left;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-weight: bold;
@@ -385,17 +387,14 @@ body {
   line-height: 72px;
   margin-top: 20px;
   color: #ffffff;
-  padding-left: 130px;
+  margin-left: 130px;
 }
 
 #container-formation-recentes {
   width: auto;
-  /* height: 632px; */
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   align-items: center;
-  /* padding: 20px 0; */
 }
 
 .container-cards-formations {
@@ -466,7 +465,7 @@ body {
 }
 
 .cards-2 {
-  width: 305px;
+  width: 307px;
   height: 362px;
   position: relative;
 }
@@ -478,77 +477,78 @@ body {
 #contenu-2 h3 {
   color: #ffffff;
 }
+.cards-2 h5 {
+  white-space: nowrap;
+}
 
 /* AVIS CLIENTS */
 
-#avis-client {
+#container-avis-clients {
   width: 100%;
   height: 597px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
 }
+#titre-avis-clients {
+  width: 100%;
+  height: 160px;
+  display: flex;
 
-#avis-client h3 {
-  width: 289px;
-  height: 36px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#titre-avis-clients h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
+  font-style: Black;
   font-size: 40px;
   line-height: 36px;
   text-transform: uppercase;
   color: #152237;
-  margin-top: 58px;
-  margin-bottom: 66px;
 }
 
-.avis {
+#les-avis {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.photo-client {
+  width: 139px;
+  height: 139px;
+  border-radius: 50%;
+}
+
+#avis-1,
+#avis-2 {
   width: 689px;
   height: 306px;
 }
 
-#avis-1 {
-  padding-right: 12px;
-}
-
-#avis-2 {
-  padding-left: 12px;
-}
-
-.avis h5 {
+#les-avis p {
   width: 686px;
-  height: 36px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  padding-bottom: 7px;
-}
-
-.avis p {
+  height: 90px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
 }
 
-.photo-client {
-  border-radius: 50%;
+#les-avis h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #152237;
 }
 
-#container-avis {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#display {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.etoiles-avis {
-  margin-bottom: 13.8px;
+.avis-break {
+  display: none;
 }
 
 /* LES AVANTAGES KLIVIO */
@@ -634,6 +634,10 @@ body {
   height: 472px;
 }
 
+.avantage-break {
+  display: none;
+}
+
 /* CREEZ FORMATION */
 
 #container-creez-formation {
@@ -682,8 +686,6 @@ body {
   height: 30px;
   left: 0;
   top: 0;
-  width: 30px;
-  height: 30px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -718,6 +720,10 @@ body {
   align-items: center;
 }
 
+.a-propos-break {
+  display: none;
+}
+
 #a-propos {
   width: 50vw;
   height: 372px;
@@ -740,6 +746,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin-bottom: 41px;
+  color: #152237;
 }
 
 #a-propos p {
@@ -747,6 +754,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+  color: #000000;
 }
 
 #background-logo {
@@ -793,14 +801,15 @@ body {
 }
 
 #container-nous-contacter h3 {
-  width: 393px;
+  width: 400px;
   height: 36px;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 40px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-top: 60px;
+  padding-top: 20px;
+  color: #152237;
 }
 
 #container-nous-contacter form {
@@ -900,7 +909,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 91px 96px 0 96px;
+  padding: 91px 75px 0 75px;
 }
 
 #listes-footer {
@@ -1010,7 +1019,8 @@ footer {
 }
 
 #ligne-milieu-footer {
-  width: 1482px;
+  width: 90%;
+  max-width: 1550px;
   height: 2px;
   background: #44dd8a;
 }
@@ -1022,14 +1032,14 @@ footer {
 }
 
 #bas-footer {
-  width: 90vw;
-  height: 30px;
+  width: 90%;
+  max-width: 1550px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-top: 28px;
-  padding: 0 85px 0 50px;
+  margin-left: 70px;
 }
 
 #bas-footer ul {
@@ -1050,14 +1060,14 @@ footer {
   font-size: 15px;
   line-height: 24px;
   color: #ffffff;
-  margin-left: 55px;
+  /* margin-left: 55px; */
 }
 
-/* VERSION MOBILE */
+/* ------ VERSION MOBILE ------- */
 
 /* BARRE DE NAVIGATION */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   #nav-droite img {
     display: none;
   }
@@ -1081,9 +1091,10 @@ footer {
 
 /* SECTION HERO */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1201px) {
   #container-hero-mobile {
     display: none;
+    height: 450px;
   }
 }
 
@@ -1100,8 +1111,10 @@ footer {
   }
 
   #slogan-klivio-mobile {
-    width: 360px;
-    height: 117px;
+    width: 90%;
+    max-width: 360px;
+    /* height: 117px; */
+    height: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 32px;
@@ -1109,11 +1122,13 @@ footer {
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
+    color: #152237;
   }
 
   #infos-klivio-mobile {
-    width: 380px;
-    height: 72px;
+    width: 90%;
+    max-width: 380px;
+    height: auto;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -1131,14 +1146,17 @@ footer {
 @media only screen and (max-width: 1650px) {
   #contenu {
     width: 100%;
-    height: 1100px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    min-height: 1100px;
+    height: auto;
   }
 
+
   #contenu h3 {
-    height: 80px;
+    height:auto;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
   }
   .container-cards-formations {
     display: grid;
@@ -1146,15 +1164,9 @@ footer {
     grid-gap: 110px;
     align-self: center;
   }
-
-  #plus-dinfo-formations {
-    width: 225px;
-    margin-top: 70px;
-    height: 40px;
-  }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   .container-cards-formations {
     display: grid;
     grid-template-columns: 1fr;
@@ -1163,7 +1175,8 @@ footer {
   }
 
   #contenu {
-    height: 1840px;
+    min-height: 1840px;
+    height: auto;
   }
 
   #plus-dinfo-formations {
@@ -1186,31 +1199,25 @@ footer {
 @media only screen and (max-width: 1650px) {
   #contenu-2 {
     width: 100%;
-    height: 1100px;
+    min-height: 1100px;
+    height: auto;
   }
 
   #contenu-2 h3 {
     height: 80px;
     text-align: center;
     padding: 0;
+    margin: 0;
   }
-  #contenu-2 button {
-    width: 225px;
-    margin-top: 70px;
-    height: 40px;
-  }
+  
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   #contenu-2 {
-    height: 1900px;
+    min-height: 1900px;
+    height: auto;
   }
-
-  #plus-dinfo-formations {
-    width: 225px;
-    margin-top: 50px;
-    height: 40px;
-  }
+ 
   .mobile-break {
     display: block;
   }
@@ -1224,4 +1231,408 @@ footer {
     margin-top: 50px;
     height: 40px;
   }
+}
+
+/* AVIS CLIENTS */
+
+@media only screen and (max-width: 1500px) {
+  #container-avis-clients {
+    width: 100%;
+    height: 900px;
+  }
+  #les-avis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #les-avis p{
+    width: 100%;
+  }
+  #avis-1,
+  #avis-2 {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  #titre-avis-clients h3 {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .avis-break {
+    display: block;
+  }
+
+  #les-avis {
+    gap: 90px;
+  }
+}
+
+/* LES AVANTAGES  */
+
+@media only screen and (max-width: 1550px) {
+  #container-avantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1232px;
+  }
+  #les-avantages {
+    padding: 0 20px;
+  }
+  #les-avantages h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+  }
+  #les-avantages li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .avantage-break {
+    display: block;
+  }
+  #container-avantages img {
+    width: 327px;
+    height: 244px;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  #les-avantages h3 {
+    width: 349px;
+    height: 93px;
+  }
+}
+
+/* CREEZ FORMATION */
+
+@media only screen and (max-width: 1550px) {
+  #container-creez-formation {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 1332px;
+  }
+  #creez-formation {
+    padding: 0 20px;
+  }
+  #creez-formation h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+  }
+  #container-creez-formation img {
+    width: 324px;
+    height: 243px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  #creez-formation h3 {
+    width: 349px;
+    height: 93px;
+  }
+}
+
+/* SECTION A PROPOS */
+
+@media only screen and (max-width: 1500px) {
+  #container-a-propos {
+    height: auto;
+  }
+
+  #a-propos div {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  #a-propos h3 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  #a-propos p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  #background-logo {
+    height: 600px;
+  }
+
+  #background-logo img {
+    width: 350px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #container-a-propos {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .a-propos-break {
+    display: block;
+  }
+
+  #a-propos {
+    width: 100%;
+    height: auto;
+    padding: 60px 20px;
+    order: 1;
+  }
+
+  #a-propos div {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 0;
+  }
+
+  #a-propos h3 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  #a-propos p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  #background-logo {
+    width: 100%;
+    height: 400px;
+    order: 2;
+  }
+
+  #background-logo img {
+    width: 280px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #a-propos {
+    padding: 40px 15px;
+  }
+
+  #a-propos h3 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+
+  #a-propos p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  #background-logo {
+    height: 350px;
+  }
+
+  #background-logo img {
+    width: 220px;
+  }
+}
+
+/* NOUS CONTACTER */
+
+@media only screen and (max-width: 1400px) {
+  #container-nous-contacter-div h3{
+    margin-bottom: 60px;
+  }
+  #container-nous-contacter{
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+  }
+  #formulaire-contact {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  #textarea {
+    width: 100%;
+  }
+  .ligne-contact{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .ligne-contact {
+    display: none;
+  }
+  #container-nous-contacter {
+    padding: 60px 20px;
+  }
+  #container-nous-contacter h3 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  #formulaire-contact {
+    gap: 30px;
+  }
+
+  #container-nous-contacter button {
+    margin: 40px 0 60px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #container-nous-contacter {
+    min-height: auto;
+    padding: 40px 15px;
+  }
+
+  #container-nous-contacter h3 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .ligne-contact {
+    width: 250px;
+    margin: 30px 0;
+  }
+  #nom-contact,
+  #email-contact {
+    width: 356px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #container-nous-contacter {
+    padding: 30px 10px;
+  }
+
+  #container-nous-contacter h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  /* .ligne-contact {
+    width: 200px;
+    margin: 25px 0;
+  } */
+
+  #formulaire-contact {
+    gap: 15px;
+  }
+
+  #nom-contact,
+  #email-contact,
+  #textarea,
+  #container-nous-contacter button {
+    max-width: 100%;
+  }
+
+  #textarea {
+    height: 160px;
+    margin-top: 15px;
+  }
+
+  #container-nous-contacter button {
+    margin: 25px 0 30px 0;
+  }
+
+  #formulaire-contact input::placeholder,
+  #textarea::placeholder {
+    font-size: 14px;
+  }
+}
+
+/* FOOTER */
+@media screen and (max-width: 1024px) {
+  footer {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+  }
+
+  #haut-footer {
+    flex-direction: column;
+    padding: 40px 0 0 0;
+    gap: 30px;
+    align-items: center;
+  }
+
+
+  #listes-footer {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #div-mentions-legales,
+  #div-coordonnees {
+    width: 100%;
+  }
+
+  #div-mentions-legales h5,
+  #div-coordonnees h5 {
+    text-align: center;
+  }
+
+  #div-mentions-legales ul,
+  #div-coordonnees ul {
+    padding: 0;
+  }
+
+  #div-coordonnees li {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  #div-coordonnees li::before {
+    display: none;
+  }
+
+  #boutons-footer {
+    display: none;
+  }
+
+  #ligne-milieu-footer {
+    width: 90%;
+    max-width: 393px;
+  }
+
+  #container-ligne-milieu {
+    margin-top: 40px;
+  }
+
+  #bas-footer,
+  #container-ligne-milieu {
+    display: none;
+  }
+
 }
